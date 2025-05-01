@@ -5,11 +5,12 @@ import { Observable } from 'rxjs';
 import { AccountState } from './account/account.model';
 import { deposit, withdraw } from './account/account.actions';
 import { CommonModule } from '@angular/common';
+import { UiButtonComponent } from './standAloneComponetExample/ui-button/ui-button.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule], 
+  imports: [CommonModule, UiButtonComponent], 
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

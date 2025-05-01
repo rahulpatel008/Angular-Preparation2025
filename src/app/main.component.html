@@ -1,5 +1,13 @@
+<div class="centerAlign">
 <h1>🏦 Banking App</h1>
-<p><strong>Balance:</strong> {{ balance$ | async | currency }}</p>
+<div class="box-bal"><strong>Balance:</strong> {{ balance$ | async | currency }}</div>
 
-<button (click)="onDeposit()">Deposit $100</button>
-<button (click)="onWithdraw()">Withdraw $50</button>
+<!-- <button (click)="onDeposit()">Deposit $100</button>
+<button (click)="onWithdraw()">Withdraw $50</button> -->
+
+<app-ui-button label="Deposit $100" styleClass="primary" (click)="onDeposit()">
+</app-ui-button>
+
+<app-ui-button label="Withdraw $50" styleClass="secondary" (click)="onWithdraw()">
+</app-ui-button>
+</div>

@@ -1,0 +1,16 @@
+
+button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .primary {
+    background-color: #05ef5f;
+    color: white;
+    margin: 10px;
+  }
+  .secondary {
+    background-color: #e20505;
+    color: black;
+  }
