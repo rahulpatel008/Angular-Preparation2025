@@ -1,1 +1,5 @@
-<p>main works!</p>
+<h1>🏦 Banking App</h1>
+<p><strong>Balance:</strong> {{ balance$ | async | currency }}</p>
+
+<button (click)="onDeposit()">Deposit $100</button>
+<button (click)="onWithdraw()">Withdraw $50</button>
