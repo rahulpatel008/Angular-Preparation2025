@@ -35,10 +35,10 @@ Displays: Click anywhere to increase the count: X, where X increments with each 
 >  ## Parameter Decorators
 > Parameter decorators are applied to constructor parameters to define how they are injected. 
 A common parameter decorator is @Inject
-Explanation:
+### Explanation:
 @Inject(DOCUMENT) tells Angular to inject the Document object into the constructor.
 this.document.title = 'Angular Decorators'; sets the browser tab's title.
-Output:
+### Output:
 The browser tab title changes to: Angular Decorators Example.
 
 ![alt text](image.png)
