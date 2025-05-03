@@ -16,28 +16,28 @@
 > Class decorators are applied to classes to define their purpose within Angular. Common class decorators include @Component, @Directive, @NgModule, and @Injectable
 
 >  ## Property Decorators
-> Property decorators are applied to class properties to define their behavior. Common property decorators include @Input and @Output.
+> Property decorators are applied to class properties to define their behavior. Common property decorators include @Input and @Output.<br/>
 **Explanation:**
 @Input() makes userName a property that can receive data from a parent component.
-In the parent template, [userName]="'RaHuL PaTel'" passes the string 'Alice' to the child component.
+In the parent template, [userName]="'RaHuL PaTel'" passes the string 'Alice' to the child component.<br/>
 **Output:**
 **Displays: Welcome, RaHuL PaTel!**
 
 
 >  ## Method Decorators
-> Method decorators are applied to class methods to define their behavior. A common method decorator is @HostListener
+> Method decorators are applied to class methods to define their behavior. A common method decorator is @HostListener<br/>
 **Explanation:**
 @HostListener('document:click', ['$event']) listens for click events on the entire document.
-Each time the document is clicked, onDocumentClick is called, incrementing clickCount.
+Each time the document is clicked, onDocumentClick is called, incrementing clickCount.<br/>
 **Output:**
 **Displays:** Click anywhere to increase the count: X, where X increments with each click.
 
 >  ## Parameter Decorators
 > Parameter decorators are applied to constructor parameters to define how they are injected. 
-A common parameter decorator is @Inject
+A common parameter decorator is @Inject<br/>
 **Explanation:**
 @Inject(DOCUMENT) tells Angular to inject the Document object into the constructor.
-this.document.title = 'Angular Decorators'; sets the browser tab's title.
+this.document.title = 'Angular Decorators'; sets the browser tab's title.<br/>
 **Output:**     
 The browser tab title changes to: Angular Decorators Example.
 
