@@ -3,9 +3,34 @@
 
 <h2>👪 Parent Component</h2>
 <!-- Call child and listen to event -->
-<app-child-message (messageEvent)="receiveMessage($event)"  [userName]="'RaHuL PaTel'"></app-child-message>
+<app-child-message (messageEvent)="receiveMessage($event)" [userName]="'RaHuL PaTel'"></app-child-message>
 <!-- Show the message -->
 <p *ngIf="parentMessage">📨 Message from child: {{ parentMessage }}</p>
 
 <h2>HostListener Example</h2>
 <p>Click anywhere to increase the count: {{ clickCount }}</p>
+
+<h2>View Child Example</h2>
+<h2>Use Case 1: Accessing a Child Component's Method Scenario: Example</h2>
+
+<br />
+
+<app-view-child></app-view-child>
+<button (click)="callChildGreet()">Greet from Parent</button>
+<p *ngIf="viewChildTrue">Open Console & See Message</p>
+
+<br />
+
+<h2>Use Case 2: Accessing a Template Reference Variable Scenario: Example</h2>
+<input #inputRef type="text" />
+<button (click)="focusInput()">Focus Input</button>
+
+<br />
+
+<h2>Use Case 3: Controlling an ng-template Scenario: Example </h2>
+<ng-template #templateRef>
+    <p>This is a dynamically rendered template!</p>
+</ng-template>
+<button (click)="renderTemplate()">Render Template</button>
+
+<br />
