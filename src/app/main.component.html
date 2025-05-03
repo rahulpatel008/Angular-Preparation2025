@@ -6,3 +6,6 @@
 <app-child-message (messageEvent)="receiveMessage($event)"  [userName]="'RaHuL PaTel'"></app-child-message>
 <!-- Show the message -->
 <p *ngIf="parentMessage">📨 Message from child: {{ parentMessage }}</p>
+
+<h2>HostListener Example</h2>
+<p>Click anywhere to increase the count: {{ clickCount }}</p>
