@@ -17,28 +17,28 @@
 
 >  ## Property Decorators
 > Property decorators are applied to class properties to define their behavior. Common property decorators include @Input and @Output.
-Explanation:
+**Explanation:**
 @Input() makes userName a property that can receive data from a parent component.
 In the parent template, [userName]="'RaHuL PaTel'" passes the string 'Alice' to the child component.
-Output:
-Displays: Welcome, RaHuL PaTel!
+**Output:**
+**Displays: Welcome, RaHuL PaTel!**
 
 
 >  ## Method Decorators
 > Method decorators are applied to class methods to define their behavior. A common method decorator is @HostListener
-Explanation:
+**Explanation:**
 @HostListener('document:click', ['$event']) listens for click events on the entire document.
 Each time the document is clicked, onDocumentClick is called, incrementing clickCount.
-Output:
-Displays: Click anywhere to increase the count: X, where X increments with each click.
+**Output:**
+**Displays:** Click anywhere to increase the count: X, where X increments with each click.
 
 >  ## Parameter Decorators
 > Parameter decorators are applied to constructor parameters to define how they are injected. 
 A common parameter decorator is @Inject
-### Explanation:
+**Explanation:**
 @Inject(DOCUMENT) tells Angular to inject the Document object into the constructor.
 this.document.title = 'Angular Decorators'; sets the browser tab's title.
-### Output:
+**Output:**     
 The browser tab title changes to: Angular Decorators Example.
 
 ![alt text](image.png)
