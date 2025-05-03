@@ -24,13 +24,12 @@ In the parent template, [userName]="'RaHuL PaTel'" passes the string 'Alice' to 
  <br/>
 
  > ### What is @ViewChild()?
- > In Angular, @ViewChild() is a decorator that allows a component to access a child component, directive,
-or DOM element from its own template. 
-This is particularly useful when you need to:
-	Interact with a child component's properties or methods
-	Access native DOM elements for direct manipulation
-	Control template elements like <ng-template> or <ng-container>
-**How Does @ViewChild() Work?**
+ > In Angular, @ViewChild() is a decorator that allows a component to access a child component, directive,or DOM element from its own template. <br/>
+- This is particularly useful when you need to: <br/>
+	* Interact with a child component's properties or methods 
+	* Access native DOM elements for direct manipulation
+	* Control template elements like ng-template or ng-container <br/>
+**How Does @ViewChild() Work?** <br/>
 When you use @ViewChild(), Angular searches the component's template for the first element that 
 matches the selector and assigns it to the specified property. This property becomes available after 
 Angular initializes the component's view, typically in the ngAfterViewInit() lifecycle hook.
@@ -41,7 +40,7 @@ You have a ChildComponent with a method that needs to be triggered from the Pare
 **Use Case 2: Accessing a Template Reference Variable Scenario:**
 You want to access a DOM element directly to, for example, set focus or read its value.<br/>
 **Use Case 3: Controlling an <ng-template> Scenario:**
-You have an <ng-template> that you want to render conditionally or manipulate programmatically.<br/>
+You have an ng-template that you want to render conditionally or manipulate programmatically.<br/>
 **Real-World Applications:**
 Form Validation: Access form controls to set focus or display validation messages.
 Modal Dialogs: Control the opening and closing of modals.
