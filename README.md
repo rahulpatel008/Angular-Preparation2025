@@ -1,7 +1,9 @@
 # Angular-Preparation2025
 
-What are decorators ?
-Angular decorators are special functions that attach metadata to classes, methods, properties, or parameters. This metadata guides Angular on how to process and instantiate these elements. Decorators are fundamental in Angular for defining components, services, directives, and more.
+
+
+>  ## What are decorators ?
+> Angular decorators are special functions that attach metadata to classes, methods, properties, or parameters. This metadata guides Angular on how to process and instantiate these elements. Decorators are fundamental in Angular for defining components, services, directives, and more.
 
 Types of Angular Decorators
 Angular provides four main types of decorators:
