@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, Inject, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Inject, QueryList, TemplateRef, ViewChild, ViewChildren, ViewContainerRef } from '@angular/core';
 import { ChildMessageComponent } from './decorators/@InputOut-child-message/child-message.component';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ViewChildComponent } from './decorators/@ViewChild/view-child.component';
@@ -45,6 +45,14 @@ export class MainComponent implements AfterViewInit {
     this.viewContainer.createEmbeddedView(this.template);
   }
 
+/* Use Case 2: Accessing Multiple DOM Elements
+Scenario:
+You have multiple <input> elements and want to clear all of them with a single button click.
+ */
+@ViewChildren('inputRef') inputElements!: QueryList<ElementRef>;
 
+clearAllInputs() {
+  this.inputElements.forEach(input => input.nativeElement.value = '');
+}
 
 }
