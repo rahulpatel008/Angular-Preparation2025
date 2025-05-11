@@ -1,0 +1,5 @@
+<label>Name:</label>
+<input type="text" [formControlName]="controlName" />
+<div class="error" *ngIf="control?.invalid && control?.touched">
+  Name is required.
+</div>

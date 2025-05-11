@@ -1,0 +1,8 @@
+<label>Username:</label>
+<input type="text" [formControlName]="controlName" />
+<div class="error" *ngIf="control?.invalid && control?.touched">
+  <span *ngIf="control?.errors?.['required']">Username is required.</span>
+  <span *ngIf="control?.errors?.['invalidUsername']">
+    Only letters, numbers, ., and _ are allowed.
+  </span>
+</div>

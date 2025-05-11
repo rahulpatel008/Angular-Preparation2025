@@ -1,0 +1,11 @@
+
+  <div class="dynamic-field" [formArrayName]="formArrayName" *ngFor="let phone of phones.controls; let i = index">
+    <input type="number" [formControlName]="i" placeholder="Enter phone number" />
+    <!-- 🔴 Error Message -->
+      <div class="error" *ngIf="phone.invalid && phone.touched">
+        Phone number is required.
+      </div>
+    <button type="button" class="remove-btn" (click)="removePhone(i)">Remove</button>
+    <button type="button" class="add-btn" (click)="addPhone()">Add Phone</button>
+
+</div>

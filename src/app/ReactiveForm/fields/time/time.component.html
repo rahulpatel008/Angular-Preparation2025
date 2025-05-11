@@ -1,0 +1,3 @@
+<label>Time:</label>
+<input type="time" [formControlName]="controlName" />
+<div class="error" *ngIf="control?.invalid && control?.touched">Time is required.</div>

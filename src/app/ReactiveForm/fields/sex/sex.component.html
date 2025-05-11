@@ -1,0 +1,7 @@
+<label>Sex:</label>
+<div>
+  <label><input type="radio" [formControlName]="controlName" value="Male" /> Male</label>
+  <label><input type="radio" [formControlName]="controlName" value="Female" /> Female</label>
+  <label><input type="radio" [formControlName]="controlName" value="Trans" /> Trans</label>
+</div>
+<div class="error" *ngIf="control?.invalid && control?.touched">Sex is required.</div>
