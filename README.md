@@ -45,7 +45,7 @@ Explore how **ViewEncapsulation** works in Angular (`Emulated`, `None`, and `Sha
 ## 🛠️ Getting Started
 
 ```bash
-git clone https://github.com/your-username/angular-preparation-2025.git
+git clone https://github.com/rahulpatel008/Angular-Preparation2025.git
 cd angular-preparation-2025
 npm install
 ng serve
