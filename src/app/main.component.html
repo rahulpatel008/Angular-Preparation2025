@@ -1,1 +1,19 @@
-<p>main works!</p>
+<form [formGroup]="mobileForm" (ngSubmit)="onSubmit()" novalidate>
+  <label for="mobile">Mobile Number:</label>
+  <input
+    type="text"
+    id="mobile"
+    formControlName="mobile"
+    appMobileRestrict
+    placeholder="Enter 10-digit mobile number"
+  />
+
+  <div *ngIf="mobileControl?.invalid && (mobileControl?.touched || mobileControl?.dirty)" class="error">
+    <div *ngIf="mobileControl?.errors?.['required']">Mobile number is required.</div>
+    <div *ngIf="mobileControl?.errors?.['invalidMobile']">
+      Mobile number must be 10 digits and start with 6–9.
+    </div>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
