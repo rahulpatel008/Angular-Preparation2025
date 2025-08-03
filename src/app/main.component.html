@@ -1,1 +1,16 @@
-<p>main works!</p>
+<h2>Angular Web Worker - 1 Lakh Records (No Lag)</h2>
+
+<button (click)="loadData()">Load Data</button>
+<p *ngIf="loading">⏳ Loading and processing in background...</p>
+
+<div class="card" *ngFor="let item of displayedData">
+  <div class="row">
+    <div><strong>ID:</strong> {{ item.id }}</div>
+    <div><strong>Name:</strong> {{ item.name }}</div>
+    <div><strong>Email:</strong> {{ item.email }}</div>
+    <div><strong>Age:</strong> {{ item.age }}</div>
+    <div><strong>Country:</strong> {{ item.country }}</div>
+    <div><strong>Status:</strong> {{ item.status }}</div>
+    <div><strong>Registered On:</strong> {{ item.registeredOn }}</div>
+  </div>
+</div>
